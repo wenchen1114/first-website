@@ -1,9 +1,66 @@
-.upbackground{
-    width: 100%;
-    height: 50%; 
-    background-color: aliceblue;
+html, body{
+    margin : 0;
+    overflow: hidden;
+    background-color: #fcf3ed;
+    font-family: 'Roboto', sans-serif;;
+}
+.upupcircle{
+    position: absolute;
+    transform: rotate(-5deg);
+    top: -20vh;
+    left: 45vw;
+    width: 40vw;
+    height: 75vh;
+    background-color: #563a07;
+    border-radius: 50%;
+}
+.upbackground {
+    position: absolute;
+    transform: skewY(-5deg);
+    top: 70px;
+    width: 100vw;
+    height: 70vh; 
+    background-color: #fcecde;
+    z-index: 0;
 }
 
-.downbackgraound{
-    background-color: bisque;
+.upcircle{
+    position: absolute;
+    transform: rotate(15deg);
+    top: 50px;
+    left: -200px;
+    width: 55vw;
+    height: 90vh;
+    background-color: #563a07;
+    border-radius: 50%;
+}
+
+.downbackground {
+    position: absolute;
+    transform: skewY(5deg);
+    top: 65vh;
+    width: 100vw;
+    height:70vh;
+    background-color: #f2d6c0;
+}
+
+.downcircle{
+    position: absolute;
+    transform: rotate(-5deg);
+    top: 55vh;
+    left: 65vw;
+    width: 55vw;
+    height: 90vh;
+    background-color: #563a07;
+    border-radius: 50%;
+}
+
+.card {
+    position: absolute;
+    background-color: #ffffff;
+    left: 65vw;
+    width: 25vw;
+    padding: 5px;
+    border-radius: 0px 0px 5px 5px;
+    z-index: 1;
 }
