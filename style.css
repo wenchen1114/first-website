@@ -1,9 +1,23 @@
+html{
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
 html, body{
     margin : 0;
     overflow: hidden;
     background-color: #fcf3ed;
-    font-family: 'Roboto', sans-serif;;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  line-height: 1.2;
+}
+
 .upupcircle{
     position: absolute;
     transform: rotate(-5deg);
@@ -58,9 +72,66 @@ html, body{
 .card {
     position: absolute;
     background-color: #ffffff;
+    top: 10vh;
     left: 65vw;
-    width: 25vw;
+    width: 30vw;
+    min-height: 70vh;
     padding: 5px;
-    border-radius: 0px 0px 5px 5px;
+    border-radius: 5px;
     z-index: 1;
+}
+.card-content{
+    padding:5px;
+    margin: 0px 0px 1px 1px;
+}
+
+.card-title{
+    padding-top: 0px;
+}
+
+.card-title h1{
+    font-family: 'Merriweather', serif;
+    font-style: italic;
+    font-weight: #444444;
+    font-size: 60pt;
+    margin: 0;
+    letter-spacing: 3pt;
+}
+
+.subtitle{
+    font-size: 18pt;
+    font-weight: 500;
+    color: #563a07;
+    border-top: 2px solid #efefef;
+    margin: 0px 0px 0px 0px;
+    padding: 5px 0px 0px 2px;
+}
+
+.description p{
+    color: #666666;
+    font-weight: 400;
+    margin: 5px 0px 0px 0px;
+    font-size:12pt;
+}
+
+.button{
+    position: relative;
+    display: block;
+    width:25%;
+    text-align: center;
+    margin: 20px 5px 10px 0px;
+    padding: 5px 2px;
+    border: 1px solid #f2d6c0;
+    background-color: #f2d6c0;
+    color: #666666;
+    font-size: 11pt;
+    text-decoration: none;
+    border-radius: 5px;
+
+}
+
+.button:hover{
+    border-color: #563a07;
+    background-color: #563a07;
+    color: #ffffff;
 }
